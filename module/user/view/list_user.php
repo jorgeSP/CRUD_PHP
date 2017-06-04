@@ -6,8 +6,9 @@
     	<div class="row">
     		<p style="text-align:center"><a href="index.php?page=controller_user&op=create"><img src="view/img/anadir.png"></a></p>
     		
-    		<table style="width: 644px">
-                <tr style="background: #11b0ff;">
+    		<table style="width: 650px; margin-left: 50px">
+                <tr style="backgrou
+                nd: #11b0ff;">
                       <td width=125><b>Disco</b></th>
                     <td width=125><b>Identificador</b></th>
                     <td width=125><b>Formato disponible</b></th>
@@ -16,7 +17,6 @@
                 <?php
                     if ($rdo->num_rows === 0){
                         echo '<tr>';
-                        echo '<td align="center"  colspan="3">NO HAY NINGUN USUARIO</td>';
                         echo '</tr>';
                     }else{
                         foreach ($rdo as $row) {

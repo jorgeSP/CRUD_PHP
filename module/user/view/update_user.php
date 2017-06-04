@@ -7,7 +7,7 @@
                 <td>Disco: </td>
                 <td><input type="text" id="disco" name="disco" placeholder="disco" value="<?php echo $user['disco'];?>" readonly/></td>
                 <td><font color="red">
-                  <span id="error_disco" class="error">
+                  <span id="error_disco" class="error" style="margin-left: -380px">
                         <?php
                         echo $error['disco'];
                         ?>
@@ -19,9 +19,9 @@
 
             <tr>
                 <td>Autor: </td>
-                <td><input type="autor" id="autor" name="autor" placeholder="autor" value="<?php echo $user['autor'];?>"/></td>
+                <td><input type="autor" id="autor" name="autor" placeholder="autor" value="<?php echo $user['autor'];?>" style="width: 167px"/></td>
                 <td><font color="red">
-                   <span id="error_autor" class="error">
+                   <span id="error_autor" class="error"  style="margin-left: -380px">
                        <?php
                         echo $error['autor'];
                         ?>
@@ -34,7 +34,7 @@
                 <td>identificador: </td>
                 <td><input type="text" id="identificador" name="identificador" placeholder="identificador" value="<?php echo $user['identificador'];?>"/></td>
                 <td><font color="red">
-                    <span id="error_identificador" class="error">
+                    <span id="error_identificador" class="error"  style="margin-left: -380px">
                        <?php
                         echo $error['identificador'];
                         ?>
@@ -47,7 +47,7 @@
                <td><input id="fecha" type="text" name="fecha_salida" placeholder="fecha de salida"  value="<?php echo $user['fechasalida'];?>" readonly/></td>
                 <td><font color="red">
               
-                  <span id="error_fecha_salida" class="error">
+                  <span id="error_fecha_salida" class="error"  style="margin-left: -380px">
                    
                 </font></font></td>
             </tr>
@@ -57,7 +57,7 @@
                 <td><input id="duracion" type="text" name="duracion" placeholder="duracion" value="<?php echo $user['duracion'];?>"/></td>
                 <td><font color="red">
                
-                   <span id="error_duracion" class="error">
+                   <span id="error_duracion" class="error"  style="margin-left: -380px">
                        <?php
                         echo $error['duracion'];
                         ?>
@@ -157,28 +157,13 @@
                 </td>
                 
                 <td><font color="red">
-                      <span id="error_genero" class="error">
+                      <span id="error_genero" class="error"  style="margin-left: -380px">
                        
                     </span>
                 </font></font></td>
             </tr>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-         
             <tr>
                 <td>Disponible en: </td>
                 <?php
@@ -223,7 +208,7 @@
                     ?>
                 </td>
                 <td><font color="red">
-                    <span id="error_aficion" class="error">
+                    <span id="error_aficion" class="error"  style="margin-left: -380px">
                         <?php
                             if(isset($error_aficion)){
                             echo "$error_aficion";
@@ -236,7 +221,7 @@
             
             <tr>
                 <td><input type="submit" name="update" id="update"/></td>
-                <td align="right"><a href="index.php?page=controller_user&op=list">Volver</a></td>
+                <td style="margin-left: 500px" class="volver"><a href="index.php?page=controller_user&op=list">Volver</a></td>
             </tr>
         </table>
     </form>

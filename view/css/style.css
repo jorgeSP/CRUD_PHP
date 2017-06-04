@@ -29,10 +29,14 @@ h1{
 	height:120px;
 }
 #menu {
-	background-image:url(../img/menu.png);
+	background-color: orange;
 	height:25px;
 	padding-top:5px;
 	text-align:center;
+
+
+
+
 }
 #menu a, #footer a{
 	color:#FFFFFF;
@@ -214,4 +218,38 @@ h1{
 .volver:active {
 	position:relative;
 	top:1px;
+}
+
+
+#botones_menu {
+
+	box-shadow:inset 0px 1px 0px 0px orange;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, orange), color-stop(1, #ffab23));
+
+	
+	
+	background:-ms-linear-gradient(top, orange 5%, orange 100%);
+	background:linear-gradient(to bottom,orange 5%, orange 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23',GradientType=0);
+	background-color:orange;
+	
+	
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+}
+#botones_menu:hover {
+	
+
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64',GradientType=0);
+	background-color:orange;
+}
+#botones_menu:active {
+	position:relative;
+	
 }

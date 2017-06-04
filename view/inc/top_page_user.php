@@ -9,13 +9,15 @@
     	<script type="text/javascript">
         	$(function() {
         		$('#fecha').datepicker({
-        			dateFormat: 'dd/mm/yy', 
-        			changeMonth: true, 
-        			changeYear: true, 
-        			yearRange: '1900:2016',
-        			onSelect: function(selectedDate) {
-        			}
-        		});
+            dateFormat: 'dd/mm/yy', 
+            changeMonth: true, 
+            changeYear: true, 
+            yearRange: '1940:2017',
+   
+            onSelect: function(selectedDate) {
+                alert(selectedDate);
+            }
+        });
         	});
 	    </script>
 	    <link href="view/css/style.css" rel="stylesheet" type="text/css" />

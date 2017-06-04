@@ -21,10 +21,19 @@
         </tr>
         
         <tr>
-            <td>Nombre: </td>
+            <td>Identificador: </td>
             <td>
                 <?php
                     echo $user['identificador'];
+                ?>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Num canciones: </td>
+            <td>
+                <?php
+                    echo $user['num_canciones'];
                 ?>
             </td>
         </tr>
