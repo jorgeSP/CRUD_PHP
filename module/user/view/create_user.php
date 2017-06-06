@@ -6,7 +6,7 @@
                 <td style="width: 150px">Disco: </td>
                 <td style="width: 10px"><input type="text" id="disco" name="disco" placeholder="disco" value=""/></td>
                 <td><font color="red">
-                    <span  style="margin-left: -200px" id="error_disco" class="error">
+                    <span  style="margin-left: -200px" id="error_disco" class="error" value="">
                         <?php
                         echo $error['disco'];
                         ?>

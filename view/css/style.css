@@ -38,19 +38,28 @@ h1{
 
 
 }
+
 #menu a, #footer a{
 	color:#FFFFFF;
 	text-decoration:none;
 	font-weight:bold;
 }
+
 #menu a:hover, #footer a:hover{
 	text-decoration:underline;
 }
+
 #contenido {
 	padding:20px;
 }
+
+#body {
+height: 555px;
+
+}
+
 #footer {
-	background-image:url(../img/menu.png);
+	background-color: rgb(255, 169, 5);
 	height:25px;
 	padding-top:5px;
 	text-align:center;

@@ -49,7 +49,7 @@
                     }
                     
 		            if($rdo){
-            			echo '<script language="javascript">alert("Registrado en la base de datos correctamente")</script>';
+            			echo '<script language="javascript">alert("Registrado el disco correctamente")</script>';
             			$callback = 'index.php?page=controller_user&op=list';
         			    die('<script>window.location.href="'.$callback .'";</script>');
             		}else{
@@ -58,7 +58,7 @@
             		}
                 }
                 else {
-                    print_r($check);
+                   // print_r($check);
                     $error=$check['error'];
                 }
             }
@@ -94,7 +94,7 @@
                     }
                     
 		            if($rdo){
-            			echo '<script language="javascript">alert("Actualizado en la base de datos correctamente")</script>';
+            			echo '<script language="javascript">alert("Actualizados los campos del disco en la base de datos")</script>';
             			$callback = 'index.php?page=controller_user&op=list';
         			    die('<script>window.location.href="'.$callback .'";</script>');
             		}else{

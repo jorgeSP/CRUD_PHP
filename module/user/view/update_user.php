@@ -221,7 +221,7 @@
             
             <tr>
                 <td><input type="submit" name="update" id="update"/></td>
-                <td style="margin-left: 500px" class="volver"><a href="index.php?page=controller_user&op=list">Volver</a></td>
+                <td><a class="volver" href="index.php?page=controller_user&op=list" style="margin-left: 330px">Volver</a></td>
             </tr>
         </table>
     </form>

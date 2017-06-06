@@ -96,5 +96,5 @@
         
     </table>
     </p>
-    <p><a href="index.php?page=controller_user&op=list">Volver</a></p>
+    <p><a class="volver" href="index.php?page=controller_user&op=list">Volver</a></p>
 </div>
