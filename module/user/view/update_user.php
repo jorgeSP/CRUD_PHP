@@ -1,13 +1,13 @@
 <div id="contenido">
     <form autocomplete="on" method="post" name="aupdate_user" id="update_user" onsubmit="return validate();" action="index.php?page=controller_user&op=update">
-        <h1>Modificar Disco</h1>
+        <h1 style="text-align: center;">Modificar Disco</h1>
         <table border='0'>
 
              <tr>
                 <td>Disco: </td>
                 <td><input type="text" id="disco" name="disco" placeholder="disco" value="<?php echo $user['disco'];?>" readonly/></td>
                 <td><font color="red">
-                  <span id="error_disco" class="error" style="margin-left: -380px">
+                  <span id="error_disco" class="error" style="margin-left: -200px">
                         <?php
                         echo $error['disco'];
                         ?>
@@ -21,7 +21,7 @@
                 <td>Autor: </td>
                 <td><input type="autor" id="autor" name="autor" placeholder="autor" value="<?php echo $user['autor'];?>" style="width: 167px"/></td>
                 <td><font color="red">
-                   <span id="error_autor" class="error"  style="margin-left: -380px">
+                   <span id="error_autor" class="error"  style="margin-left: -200px">
                        <?php
                         echo $error['autor'];
                         ?>
@@ -34,7 +34,7 @@
                 <td>identificador: </td>
                 <td><input type="text" id="identificador" name="identificador" placeholder="identificador" value="<?php echo $user['identificador'];?>"/></td>
                 <td><font color="red">
-                    <span id="error_identificador" class="error"  style="margin-left: -380px">
+                    <span id="error_identificador" class="error"  style="margin-left: -200px">
                        <?php
                         echo $error['identificador'];
                         ?>
@@ -47,7 +47,7 @@
                <td><input id="fecha" type="text" name="fecha_salida" placeholder="fecha de salida"  value="<?php echo $user['fechasalida'];?>" readonly/></td>
                 <td><font color="red">
               
-                  <span id="error_fecha_salida" class="error"  style="margin-left: -380px">
+                  <span id="error_fecha_salida" class="error"  style="margin-left: -200px">
                    
                 </font></font></td>
             </tr>
@@ -57,7 +57,7 @@
                 <td><input id="duracion" type="text" name="duracion" placeholder="duracion" value="<?php echo $user['duracion'];?>"/></td>
                 <td><font color="red">
                
-                   <span id="error_duracion" class="error"  style="margin-left: -380px">
+                   <span id="error_duracion" class="error"  style="margin-left: -200px">
                        <?php
                         echo $error['duracion'];
                         ?>
@@ -157,7 +157,7 @@
                 </td>
                 
                 <td><font color="red">
-                      <span id="error_genero" class="error"  style="margin-left: -380px">
+                      <span id="error_genero" class="error"  style="margin-left: -200px">
                        
                     </span>
                 </font></font></td>
@@ -195,20 +195,22 @@
                         }
                     ?>
                     <?php
-                        $busca_array=in_array("single", $afi);
+                        $busca_array=in_array("DescargaDigital", $afi);
                         if($busca_array){
                     ?>
-                        <input type="checkbox" id= "disponible[]" name="disponible[]" value="single" checked/>Single</td>
+                        <input type="checkbox" id= "disponible[]" name="disponible[]" value="DescargaDigital" checked/>Descarga Digital</td>
                     <?php
                         }else{
                     ?>
-                    <input type="checkbox" id= "disponible[]" name="disponible[]" value="single"/>Single</td>
+                    <input type="checkbox" id= "disponible[]" name="disponible[]" value="DescargaDigital"/>Descarga Digital</td>
                     <?php
                         }
                     ?>
+
+
                 </td>
                 <td><font color="red">
-                    <span id="error_aficion" class="error"  style="margin-left: -380px">
+                    <span id="error_aficion" class="error"  style="margin-left: -200px">
                         <?php
                             if(isset($error_aficion)){
                             echo "$error_aficion";

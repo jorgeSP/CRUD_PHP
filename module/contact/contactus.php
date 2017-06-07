@@ -36,6 +36,12 @@ Maecenas libero enim, feugiat non, pretium eu, pellentesque vitae, enim. Fusce v
           center: {lat: 38.8167, lng:  -0.6167},
           zoom: 9
         });
+
+         var marker = new google.maps.Marker({
+    position: {lat: 38.8167, lng:  -0.6167},
+    map: map,
+    title: 'Ontinyent'
+  });
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdM6mwo-AOIseYychnTCGFmGLNNrAvqtw&callback=initMap"

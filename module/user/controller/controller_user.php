@@ -7,6 +7,8 @@
             try{
                 $daouser = new DAOUser();
             	$rdo = $daouser->select_all_user();
+                $rdo1 = $daouser->select_all_user_date_desc();
+                $rdo2 = $daouser->select_all_user_date_asc();
             }catch (Exception $e){
                 $callback = 'index.php?page=503';
 			    die('<script>window.location.href="'.$callback .'";</script>');

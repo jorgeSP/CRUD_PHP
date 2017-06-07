@@ -1,11 +1,12 @@
 <?php
     function validate_disco($texto){
-        $reg="/^[a-zA-Z]{3-50}$/";
+        $reg="/^[a-zA-Z]{3,50}$/";
         return preg_match($reg,$texto);
     }
 
     function validate_autor($texto){
-        $reg="/^[a-zA-Z]{3-50}$/";
+      //  $reg="/^[a-zA-Z]{3,50}$/";
+          $reg="/^[a-zA-Z[:space:]]*$/";
         return preg_match($reg,$texto);
     }
     
@@ -23,7 +24,7 @@
     }
     
      function validate_duracion($texto){
-        $reg="/[0-9]{1,3}$/";
+        $reg="/^[0-9]{1,3}$/";
         return preg_match($reg,$texto);
     }
     
@@ -41,13 +42,13 @@
         $r_duracion=validate_duracion($v_duracion);
         
         if($r_disco !== 1){
-            $error_disco = " * El disco introducido no es valido";
+            $error_disco = " * El disco introducido no es valido (solo letras 3-50)";
             $check=false;
         }else{
             $error_disco = "";
         }
           if($r_autor !== 1){
-            $error_autor = " * El autor introducido no es valido";
+            $error_autor = " * El autor introducido no es valido (solo letras y espacios)";
             $check=false;
         }else{
             $error_autor = "";
@@ -59,7 +60,7 @@
             $error_identificador = "";
         }
          if($r_duracion !== 1){
-            $error_duracion = " * La duracion introducida no es valida";
+            $error_duracion = " * La duracion introducida no es valida (Min 1 num,Max 3 num)";
             $check=false;
         }else{
             $error_duracion = "";

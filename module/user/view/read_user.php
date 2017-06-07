@@ -83,16 +83,12 @@
                 ?>
             </td>
         </tr>
-        <!--
-        <tr>
-            <td>Idioma: </td>
-            <td>
-                <?php
-                    echo $user['ciudad'];
-                ?>
-            </td>
+
+          <tr>
+         <th colspan="6">
+            <a class="wiki" href="https://es.wikipedia.org/wiki/<?php echo $user['disco']?>">Biografia del disco</a>
+           </th>
         </tr>
-        -->
         
     </table>
     </p>

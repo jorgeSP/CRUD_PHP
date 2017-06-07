@@ -37,6 +37,22 @@
             connect::close($conexion);
             return $res;
 		}
+
+        function select_all_user_date_desc(){
+            $sql = "SELECT * FROM usuario order by fechasalida DESC";
+            $conexion = connect::con();
+            $res = mysqli_query($conexion, $sql);
+            connect::close($conexion);
+            return $res;
+        }
+
+           function select_all_user_date_asc(){
+            $sql = "SELECT * FROM usuario order by fechasalida ASC";
+            $conexion = connect::con();
+            $res = mysqli_query($conexion, $sql);
+            connect::close($conexion);
+            return $res;
+        }
 		
 		function select_user($user){
 			$sql = "SELECT * FROM usuario WHERE disco='$user'";

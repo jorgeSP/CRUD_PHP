@@ -12,11 +12,9 @@
             dateFormat: 'dd/mm/yy', 
             changeMonth: true, 
             changeYear: true, 
-            yearRange: '1940:2017',
+            yearRange: '1940:2017'
    
-            onSelect: function(selectedDate) {
-                alert(selectedDate);
-            }
+      
         });
         	});
 	    </script>

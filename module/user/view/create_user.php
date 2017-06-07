@@ -129,9 +129,10 @@
             <tr>
                 <td>Disponible en: </td>
                 <td>
-                <input type="checkbox" id= "disponible[]" name="disponible[]" placeholder= "disponible" value="disco"  checked="true"/>Disco
+                <input type="checkbox" id= "disponible[]" name="disponible[]" placeholder= "disponible" value="DescargaDigital"  checked="true"/>Descarga Digital
+                <input type="checkbox" id= "disponible[]" name="disponible[]" placeholder= "disponible" value="disco" />Disco
                     <input type="checkbox" id= "disponible[]" name="disponible[]" placeholder= "disponible" value="vinilo"/>Vinilo
-                    <input type="checkbox" id= "disponible[]" name="disponible[]" placeholder= "disponible" value="single"/>Single</td>
+                    <!--<input type="checkbox" id= "disponible[]" name="disponible[]" placeholder= "disponible" value="single"/>Single</td>-->
                 <td><font color="red">
               
                     <span style="margin-left: -200px" id="error_disponible" class="error">
